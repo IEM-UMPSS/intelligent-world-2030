@@ -59,8 +59,13 @@ const LandingPage: NextPage = () => {
             </Link>
           </div>
         </div>
+        <div className="mt-5 flex flex-col items-center">
+          <h2 className="text-3xl">
+            <b>Event Schedule</b>
+          </h2>
+        </div>
         <Flow />
-        <div className="flex flex-col items-center gap-2 mb-5" id="register">
+        <div className="mb-5 flex flex-col items-center gap-2" id="register">
           <p className="text-2xl text-black">Made with 💕 by Technical Team</p>
         </div>
       </main>
