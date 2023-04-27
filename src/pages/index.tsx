@@ -2,6 +2,8 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import Flow from "~/components/flow";
+import Header from "~/components/header";
+import Memory from "~/components/memory";
 
 const LandingPage: NextPage = () => {
   return (
@@ -25,6 +27,7 @@ const LandingPage: NextPage = () => {
             className="fixed left-0 top-0 z-[-1] h-full w-full object-cover "
           ></video>
         </div>
+        <Header />
         <div className="container relative z-10 flex flex-col items-center justify-center gap-12 px-4 py-2">
           <h1 className="text-center text-5xl font-extrabold tracking-tight text-red-600 sm:text-[5rem]">
             Huawei Open Day: <br />
@@ -58,13 +61,12 @@ const LandingPage: NextPage = () => {
               </div>
             </Link>
           </div>
+          <div></div>
         </div>
-        <div className="mt-5 flex flex-col items-center">
-          <h2 className="text-3xl">
-            <b>Event Schedule</b>
-          </h2>
+        <div className="p-5 pt-0">
+          <p className="text-2xl text-black "><b>Memory Board</b></p>
         </div>
-        <Flow />
+        <Memory />
         <div className="mb-5 flex flex-col items-center gap-2" id="register">
           <p className="text-2xl text-black">Made with 💕 by Technical Team</p>
         </div>
