@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Flow = () => {
   return (
-    <div className="mx-auto flex p-5 xl:px-0">
+    <div className="mx-auto flex p-5 xl:px-0 mb-2">
       <ol className="relative border-l border-gray-300 text-gray-500 dark:border-gray-700 dark:text-gray-400">
         <li className="mb-10 ml-6">
           <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-black/10 dark:bg-gray-700 dark:ring-gray-900">
@@ -22,10 +22,13 @@ const Flow = () => {
               />
             </svg>
           </span>
-          <h3 className="font-medium leading-tight">
-            Arrival of guess and students
-          </h3>
-          <p className="text-sm">8.30 AM - 9.00 AM</p>
+          <div className="ml-4">
+            <h3 className="font-medium leading-tight">
+            <b>Venue : Auditorium Library, UMP Pekan</b> <br />
+            • Arrival of guess and students
+            </h3>
+            <p className="text-sm">8.30 AM - 9.00 AM</p>
+          </div>
         </li>
         <li className="mb-10 ml-6">
           <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-black/10 dark:bg-gray-700 dark:ring-gray-900">
@@ -44,10 +47,12 @@ const Flow = () => {
               />
             </svg>
           </span>
-          <h3 className="font-medium leading-tight">
-            Arrival of Vice Chancellor, Huawei VIPs, Honourable guests
-          </h3>
-          <p className="text-sm">9.00 AM - 9.40 AM</p>
+          <div className="ml-4">
+            <h3 className="font-medium leading-tight">
+              Arrival of Vice Chancellor, Huawei VIPs, Honourable guests
+            </h3>
+            <p className="text-sm">9.00 AM - 9.40 AM</p>
+          </div>
         </li>
         <li className="mb-10 ml-6">
           <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-black/10 dark:bg-gray-700 dark:ring-gray-900">
@@ -66,12 +71,14 @@ const Flow = () => {
               />
             </svg>
           </span>
-          <h3 className="font-medium leading-tight">
-            • Welcoming Speech by Event Emcees <br />
-            • National Anthem "Negaraku" <br />
-            • UMP Anthem "UMP Maju Gemilang" <br />• Doa Recitation
-          </h3>
-          <p className="text-sm">9.45 AM - 10.05 AM</p>
+          <div className="ml-4">
+            <h3 className="font-medium leading-tight">
+              • Welcoming Speech by Event Emcees <br />
+              • National Anthem "Negaraku" <br />
+              • UMP Anthem "UMP Maju Gemilang" <br />• Doa Recitation
+            </h3>
+            <p className="text-sm">9.45 AM - 10.05 AM</p>
+          </div>
         </li>
         <li className="mb-10 ml-6">
           <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-black/10 dark:bg-gray-700 dark:ring-gray-900">
@@ -90,13 +97,15 @@ const Flow = () => {
               />
             </svg>
           </span>
-          <h3 className="font-medium leading-tight">
-            • Opening Ceremony <br />
-            • Welcoming Address by Professor Dato' Ts. Dr. Yuserrie bin
-            Zainuddin DIMP <br />
-            • Welcoming Address by David Li <br />• Opening Montage
-          </h3>
-          <p className="text-sm">10.05 AM - 10.30 AM</p>
+          <div className="ml-4">
+            <h3 className="font-medium leading-tight">
+              • Opening Ceremony <br />
+              • Welcoming Address by Professor Dato' Ts. Dr. Yuserrie bin
+              Zainuddin DIMP <br />
+              • Welcoming Address by David Li <br />• Opening Montage
+            </h3>
+            <p className="text-sm">10.05 AM - 10.30 AM</p>
+          </div>
         </li>
         <li className="mb-10 ml-6">
           <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-black/10 dark:bg-gray-700 dark:ring-gray-900">
@@ -115,11 +124,13 @@ const Flow = () => {
               />
             </svg>
           </span>
-          <h3 className="font-medium leading-tight">
-            • Intelligent World 2030 - Insights into ICT trends and their
-            applications for the next decade <br />• Q&A
-          </h3>
-          <p className="text-sm">10.30 AM - 11.30 AM</p>
+          <div className="ml-4">
+            <h3 className="font-medium leading-tight">
+              • Intelligent World 2030 - Insights into ICT trends and their
+              applications for the next decade <br />• Q&A
+            </h3>
+            <p className="text-sm">10.30 AM - 11.30 AM</p>
+          </div>
         </li>
         <li className="mb-10 ml-6">
           <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-black/10 dark:bg-gray-700 dark:ring-gray-900">
@@ -138,10 +149,12 @@ const Flow = () => {
               />
             </svg>
           </span>
-          <h3 className="font-medium leading-tight">
-            Elevate Your Potential with Huawei
-          </h3>
-          <p className="text-sm">11.30 AM - 12.30 PM</p>
+          <div className="ml-4">
+            <h3 className="font-medium leading-tight">
+              Elevate Your Potential with Huawei
+            </h3>
+            <p className="text-sm">11.30 AM - 12.30 PM</p>
+          </div>
         </li>
         <li className="mb-10 ml-6">
           <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-black/10 dark:bg-gray-700 dark:ring-gray-900">
@@ -165,10 +178,12 @@ const Flow = () => {
               />
             </svg>
           </span>
-          <h3 className="font-medium leading-tight">
-            • Souvenir Presentation <br />• Photo Session
-          </h3>
-          <p className="text-sm">12.30 PM - 12.40 PM</p>
+          <div className="ml-4">
+            <h3 className="font-medium leading-tight">
+              • Souvenir Presentation <br />• Photo Session
+            </h3>
+            <p className="text-sm">12.30 PM - 12.40 PM</p>
+          </div>
         </li>
         <li className="mb-10 ml-6">
           <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-black/10 dark:bg-gray-700 dark:ring-gray-900">
@@ -187,8 +202,10 @@ const Flow = () => {
               />
             </svg>
           </span>
-          <h3 className="font-medium leading-tight">Lunch Break</h3>
-          <p className="text-sm">12.40 AM - 1.30 PM</p>
+          <div className="ml-4">
+            <h3 className="font-medium leading-tight">Lunch Break</h3>
+            <p className="text-sm">12.40 AM - 1.30 PM</p>
+          </div>
         </li>
         <li className="mb-10 ml-6">
           <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-black/10 dark:bg-gray-700 dark:ring-gray-900">
@@ -207,11 +224,13 @@ const Flow = () => {
               />
             </svg>
           </span>
-          <h3 className="font-medium leading-tight">
-            Venue : Pusat Akademik Pelajar, UMP Pekan <br />
-            • Career Consultation <br />• Resume Review
-          </h3>
-          <p className="text-sm">1.30 PM - 4.45 PM</p>
+          <div className="ml-4">
+            <h3 className="font-medium leading-tight">
+              <b>Venue : Pusat Akademik Pelajar, UMP Pekan</b> <br />
+              • Career Consultation <br />• Resume Review
+            </h3>
+            <p className="text-sm">1.30 PM - 4.45 PM</p>
+          </div>
         </li>
         <li className="mb-0 ml-6">
           <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-4 ring-black/10 dark:bg-gray-700 dark:ring-gray-900">
@@ -230,8 +249,10 @@ const Flow = () => {
               />
             </svg>
           </span>
-          <h3 className="font-medium leading-tight">The End</h3>
-          <p className="text-sm">5.00 PM</p>
+          <div className="ml-4">
+            <h3 className="font-medium leading-tight">The End</h3>
+            <p className="text-sm">5.00 PM</p>
+          </div>
         </li>
       </ol>
     </div>
