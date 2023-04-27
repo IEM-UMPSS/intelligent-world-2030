@@ -63,10 +63,10 @@ const LandingPage: NextPage = () => {
           </div>
           <div></div>
         </div>
-        <div className="p-5 pt-0">
+        {/* <div className="p-5 pt-0">
           <p className="text-2xl text-black "><b>Memory Board</b></p>
         </div>
-        <Memory />
+        <Memory /> */}
         <div className="mb-5 flex flex-col items-center gap-2" id="register">
           <p className="text-2xl text-black">Made with 💕 by Technical Team</p>
         </div>
