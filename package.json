@@ -12,8 +12,7 @@
 		"start": "pnpm run css-watch"
 	},
 	"devDependencies": {
-		"@types/node": "^18.16.5",
-		"node-sass": "^8.0.0",
+		"@types/node": "^18",
 		"nuxt": "^3.4.3"
 	},
 	"dependencies": {
@@ -21,6 +20,7 @@
 		"@oruga-ui/oruga-next": "^0.6.0",
 		"@oruga-ui/theme-bulma": "^0.2.10",
 		"bulma-list": "^1.2.0",
+		"node-sass": "^8.0.0",
 		"vue-scrollto": "^2.20.0"
 	}
 }

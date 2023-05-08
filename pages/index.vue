@@ -1,11 +1,11 @@
 <script setup>
 import { ref } from 'vue'
-import navbar from '~/components/navbar.vue';
-import ofooter from '~/components/footer.vue'
+import navbar from '@/components/navbar.vue';
+import ofooter from '@/components/footer.vue'
 import VueScrollTo from 'vue-scrollto';
 
 const isVideoModalActive = ref(false)
-const scrollToElement = (id, duration) => {
+const scrollToElement = (id) => {
 	VueScrollTo.scrollTo(id, {
 		duration: 500,
 	});
@@ -57,6 +57,7 @@ const organizers = [
 	{ image: "https://i.postimg.cc/vZC9TwTs/340401796-760010555619055-2976762322369776021-n.jpg" },
 	{ image: "https://i.postimg.cc/hv1dvXwz/335218020-589255826576673-3831463242205828873-n.jpg" }
 ]
+
 const d1lists = [
 	{
 		title: "9.00 am – 9.30 am",
@@ -107,45 +108,32 @@ const d2lists = [
 	},
 ]
 
-const data = ref([
+const booths = [
 	{
 		no: "001",
-		booth: "Huawei Consultation Booth"
+		name: "Huawei Consultation Booth"
 	},
 	{
 		no: "002",
-		booth: "Huawei Consultation Booth"
+		name: "Huawei Consultation Booth"
 	},
 	{
 		no: "003",
-		booth: "Huawei Consultation Booth"
+		name: "Huawei Consultation Booth"
 	},
 	{
 		no: "004",
-		booth: "Kiran Pandia - Sign language recognition using deep learning(MySLR)"
+		name: "Kiran Pandia - Sign language recognition using deep learning(MySLR)"
 	},
 	{
 		no: "005",
-		booth: "Dr. Azraai Mohd Razman - IOT based Smart Farming System(agronetics.net)"
+		name: "Dr. Azraai Mohd Razman - IOT based Smart Farming System(agronetics.net)"
 	},
 	{
 		no: "006",
-		booth: "IEM Pahang"
+		name: "IEM Pahang"
 	},
-])
-
-const columns = ref([
-	{
-		field: "no",
-		label: "No",
-		position: "centered"
-	},
-	{
-		field: "booth",
-		label: "Booth",
-		position: "centered"
-	}
-])
+]
 </script>
 
 <template>
@@ -328,11 +316,20 @@ const columns = ref([
 						<figure class="image">
 							<img src="https://i.postimg.cc/4NtCS4Qr/PAP-FLOORPLAN-5-1-pages-to-jpg-0001.jpg">
 						</figure>
-						<o-table :data="data" bordered hoverable narrowed>
-							<o-table-column v-for="column in columns" v-bind="column" #default="{ row }">
-								{{ row[column.field] }}
-							</o-table-column>
-						</o-table>
+						<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth has-text-centered">
+							<thead>
+								<tr>
+									<th class="has-text-centered">No</th>
+									<th class="has-text-centered">Booth</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr v-for="(booth, i) in booths" :key="i">
+									<td>{{ booth.no }}</td>
+									<td>{{ booth.name }}</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
@@ -391,24 +388,24 @@ const columns = ref([
 					<div class="column is-12">
 						<div class="columns is-multiline has-text-centered-desktop">
 							<div class="column is-4">
-								<a href="https://www.facebook.com/IEMUMPStudentSection/" class="has-text-link-dark is-size-4" target="_blank"><o-icon
-										size="medium" icon="facebook"></o-icon>@IEMUMPStudentSection</a>
+								<a href="https://www.facebook.com/IEMUMPStudentSection/" class="has-text-link-dark is-size-4"
+									target="_blank"><o-icon size="medium" icon="facebook"></o-icon>@IEMUMPStudentSection</a>
 							</div>
 							<div class="column is-4">
-								<a href="https://www.instagram.com/iemumpss/" class="has-text-danger-dark is-size-4" target="_blank"><o-icon size="medium"
-										icon="instagram"></o-icon>@iemumpss</a>
+								<a href="https://www.instagram.com/iemumpss/" class="has-text-danger-dark is-size-4"
+									target="_blank"><o-icon size="medium" icon="instagram"></o-icon>@iemumpss</a>
 							</div>
 							<div class="column is-4">
 								<a href="https://t.me/iemumpss" class="has-text-info is-size-4" target="_blank"><o-icon size="medium"
 										icon="send-variant-outline"></o-icon>@iemumpss</a>
 							</div>
 							<div class="column is-4">
-								<a href="https://www.linkedin.com/company/iemumpss/" class="has-text-link is-size-4"  target="_blank"><o-icon size="medium"
-										icon="linkedin"></o-icon>@iemumpss</a>
+								<a href="https://www.linkedin.com/company/iemumpss/" class="has-text-link is-size-4"
+									target="_blank"><o-icon size="medium" icon="linkedin"></o-icon>@iemumpss</a>
 							</div>
 							<div class="column is-4">
-								<a href="https://iemumpss.vercel.app" class="has-text-info-dark is-size-4" target="_blank"><o-icon size="medium"
-										icon="web"></o-icon>http://iemumpss.tech</a>
+								<a href="https://iemumpss.vercel.app" class="has-text-info-dark is-size-4" target="_blank"><o-icon
+										size="medium" icon="web"></o-icon>http://iemumpss.tech</a>
 							</div>
 							<div class="column is-4">
 								<a href="mailto:iem@ump.edu.my" class="has-text-dark is-size-4"><o-icon size="medium"
@@ -447,4 +444,5 @@ const columns = ref([
 
 .overlay-75 {
 	background-color: rgb(0, 0, 0, 0.75);
-}</style>
+}
+</style>
